@@ -7,3 +7,7 @@ https://stackoverflow.com/questions/43224436/splitting-variable-not-working-in-a
 How to append to lists in Ansible
 -----------------------------------
 https://blog.crisp.se/2016/10/20/maxwenzin/how-to-append-to-lists-in-ansible
+
+Calculate and add new item a list
+---------------------------------
+https://stackoverflow.com/questions/44673615/ansible-add-integer-value-to-a-list
