@@ -1,4 +1,8 @@
 # Ansible_tutorial
+Run a ansible playbook file
+-----------------------------
+ansible-playbook -i staging day1/check_blade_status.yml
+
 Make a list using new line
 ----------------------------
 - set_fact: var_list="{{plain_var.split('\n')}}"
