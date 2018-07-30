@@ -44,6 +44,5 @@ difference two list and create one like error list
 
 - name: Create error list
   set_fact:
-    error_list: "{{ current_situation |
-      difference(expected_situaltion) }}"
+    error_list: "{{ current_situation | difference(expected_situaltion) }}"
 ```
