@@ -3,6 +3,13 @@ Run a ansible playbook file
 -----------------------------
 ansible-playbook -i staging day1/check_blade_status.yml
 
+Regular expression serarch for one time
+---------------------------------------
+- name: Get some info
+  set_fact:
+    some_info: "{{ result.stdout | regex_search(regex_var) }}"
+
+
 Make a list using new line
 ----------------------------
 - set_fact: var_list="{{plain_var.split('\n')}}"
