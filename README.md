@@ -57,7 +57,7 @@ Try also dictionary-based approach. It seems to be less ugly.
   {% if vars.foo %} Ok(1)! {% endif %}
 {% endfor %}
 
-{% if vars.foo %} Ok(2)! {% endif %}```
+{% if vars.foo %} Ok(2)! {% endif %}
 
 ```
 This also renders:
