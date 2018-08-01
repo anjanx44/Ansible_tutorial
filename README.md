@@ -46,3 +46,22 @@ difference two list and create one like error list
   set_fact:
     error_list: "{{ current_situation | difference(expected_situaltion) }}"
 ```
+Jinja2: Change the value of a variable inside a loop
+-----------------------------------------------------
+Try also dictionary-based approach. It seems to be less ugly.
+```
+{% set vars = {'foo': False} %}
+
+{% for item in items %}
+  {% if vars.update({'foo': True}) %} {% endif %}
+  {% if vars.foo %} Ok(1)! {% endif %}
+{% endfor %}
+
+{% if vars.foo %} Ok(2)! {% endif %}```
+
+```
+This also renders:
+```
+Ok(1)!
+Ok(2)!
+```
