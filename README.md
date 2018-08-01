@@ -65,3 +65,4 @@ This also renders:
 Ok(1)!
 Ok(2)!
 ```
+https://stackoverflow.com/questions/9486393/jinja2-change-the-value-of-a-variable-inside-a-loop
