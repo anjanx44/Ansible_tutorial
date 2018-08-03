@@ -66,3 +66,25 @@ Ok(1)!
 Ok(2)!
 ```
 https://stackoverflow.com/questions/9486393/jinja2-change-the-value-of-a-variable-inside-a-loop
+
+
+OR operator in Ansible
+------------------------
+```
+tasks:
+  - name: "shut down CentOS 6 and Debian 7 systems"
+    command: /sbin/shutdown -t now
+    when: (ansible_distribution == "CentOS" and ansible_distribution_major_version == "6") or
+          (ansible_distribution == "Debian" and ansible_distribution_major_version == "7")
+```
+AND operator in Ansible
+-------------------------
+```
+tasks:
+  - name: "shut down CentOS 6 systems"
+    command: /sbin/shutdown -t now
+    when:
+      - ansible_distribution == "CentOS"
+      - ansible_distribution_major_version == "6"
+
+```
