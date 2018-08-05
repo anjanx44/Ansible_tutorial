@@ -88,3 +88,14 @@ tasks:
       - ansible_distribution_major_version == "6"
 
 ```
+Find all match information from a variable/register using regular expression(regex_findall)
+--------------------------------------------------------------------------------------------
+
+```
+- name: Get Information from remote machine
+  set_fact:
+    lookup_list: "{{ register.stdout | regex_findall(a_regular_expression) }}"
+```
+
+
+
