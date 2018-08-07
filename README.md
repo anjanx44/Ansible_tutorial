@@ -1,8 +1,14 @@
 # Ansible_tutorial
+install ansible using pip and any virsion
+-------------------------------------------
+```
+pip install ansible==2.5
+```
 ### Run a ansible playbook file
 -----------------------------
+```
 ansible-playbook -i staging day1/check_blade_status.yml
-
+```
 Regular expression serarch for one time
 ---------------------------------------
 ```
