@@ -102,7 +102,4 @@ Find all match information from a variable/register using regular expression(reg
   set_fact:
     lookup_list: "{{ register.stdout | regex_findall(a_regular_expression) }}"
 ```
-
-Test Commit
---------------------------------------------------------------------------------------------
-
+---------------------------------------------------------------------------------------------
