@@ -102,4 +102,14 @@ Find all match information from a variable/register using regular expression(reg
   set_fact:
     lookup_list: "{{ register.stdout | regex_findall(a_regular_expression) }}"
 ```
+Loop over tow list same time
 ---------------------------------------------------------------------------------------------
+src: https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html#with-together
+```
+- name: with_together
+  debug:
+    msg: "{{ item.0 }} - {{ item.1 }}"
+  with_together:
+    - "{{ list_one }}"
+    - "{{ list_two }}"
+```
