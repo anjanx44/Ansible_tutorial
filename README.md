@@ -113,3 +113,13 @@ src: https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html#wit
     - "{{ list_one }}"
     - "{{ list_two }}"
 ```
+
+
+Run a python file on localhost
+--------------------------
+```
+- name: get dest file list
+  script: scripts/get_dest_list.py
+  register: dest_list
+  delegate_to: localhost
+```
